@@ -1,0 +1,1 @@
+export const pancakes = require('./panckaes.png');
