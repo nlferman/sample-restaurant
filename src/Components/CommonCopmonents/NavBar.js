@@ -1,4 +1,3 @@
-import React, {useState, useEffect} from 'react';
 import '../../Bootstrap/css/bootstrap.css';
 
 function NavBar() {
