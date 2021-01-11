@@ -5,12 +5,8 @@ import CarouselHeader from './Components/CommonCopmonents/CarouselHeader';
 function App() {
   return (
     <div className="App">
-      <div>
-        <NavBar/>
-      </div>
-      <div>
-        <CarouselHeader />
-      </div>
+      {/* <NavBar/> */}
+      <CarouselHeader />
     </div>
   );
 }
