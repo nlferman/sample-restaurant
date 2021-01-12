@@ -1,26 +1,39 @@
 import '../../Bootstrap/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+
 
 const cardDefault = 
 {
-    headerName: 'Breakfest'
+  cardTitle: 'Breakfest'
 };
 
 
+/*
+This is a quick copy line for instantly adding a card somewhere with example text.
+<CardComponents cardTitle ="Lunch" cardText=" Some quick example text to build on the card title and make up the bulk of
+the card's content." buttonText="Menu">
 
+</CardComponents>*/
 
-function Card(props) {
+function CardComponenet(props) {
     return (
-      <div className="card"  style={{width: 18 + "rem"}}>
-          <img className='card-img-top' src="" alt="Card Image Cap"/>
-          <div className="card-body">
-              <h5 className="card-title">Card Title</h5>
-              <p className="card-text">Some quick test text.</p>
-              <a href="#" className="btn btn-primary">Lunch Menu</a>
-          </div>
-      </div>
+        <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Body>
+          <Card.Title>{props.cardTitle}</Card.Title>
+          <Card.Text>
+             
+             {props.cardText}
+            
+          </Card.Text>
+          <Button variant="primary">{props.buttonText}</Button>
+        </Card.Body>
+      </Card>
     );
   }
 
-  export default Card;
+  export default CardComponenet;
 
   

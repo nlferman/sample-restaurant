@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import {pancakes} from '../../Images/Images';
+import Eggs from '../../Images/eggs.png';
 
 const CarouselHeader = () => {
     const [index, setIndex] = useState(0);
@@ -14,7 +15,7 @@ const CarouselHeader = () => {
         <Carousel.Item>
             <img
             className="d-block w-100"
-            src="holder.js/800x400?text=First slide&bg=373940"
+            src={Eggs}
             alt="First slide"
             />
             <Carousel.Caption>
@@ -25,7 +26,7 @@ const CarouselHeader = () => {
         <Carousel.Item>
             <img
             className="d-block w-100"
-            src="holder.js/800x400?text=Second slide&bg=282c34"
+            src="../../Images/eggs.png"
             alt="Second slide"
             />
     
