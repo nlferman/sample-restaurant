@@ -1,1 +1,8 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import './variables';
+@import './nav';
+
+*{
+    font-size: 20px;
+    background-color: map-get($background-colors, grey );
+}
