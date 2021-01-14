@@ -19,7 +19,7 @@ the card's content." buttonText="Menu">
 
 function CardComponenet(props) {
     return (
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '28rem' }}>
         <Card.Img variant="top" src="holder.js/100px180" />
         <Card.Body>
           <Card.Title>{props.cardTitle}</Card.Title>
