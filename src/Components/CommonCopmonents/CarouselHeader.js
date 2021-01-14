@@ -1,8 +1,5 @@
 import {useState} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-// import breakfast from '../../../public/Images/panckaes.png';
-// import lunch from '../../../public/Images/club_sandwich.png';
-// import dinner from '../../Images/steak.png';
 
 const CarouselHeader = (props) => {
     const [index, setIndex] = useState(0);
